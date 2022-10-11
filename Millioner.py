@@ -61,6 +61,11 @@ def millioner(testic):
             print ("Этот вопрос вам оказался не под силу, попробуйте следующий!\n")
         else:
           print ("Я вас не понимаю...\n")
+    else:
+      if testic[voprosik]==otvetic:
+        bank+=banki
+      voprosik+=1
+  return bank    
 
 
 def test():
