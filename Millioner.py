@@ -23,6 +23,21 @@ def millioner(testic):
     dict2[2]=dict1[2]
     dict2[3]=dict1[3]
     dict2[4]=dict1[4]
+    vopri=voprosik
+    if testic == {}:
+      while vopri==voprosik:
+        print("Вопрос", voprosik,"!\n")
+        print(vopr, "\n")
+        print ("A: ", dict2[1], "Б: ", dict2[2], "\nВ: ", dict2[3], "Г: ", dict2[4])
+        vvod=""
+        vvod = input("\nОтвет: ")
+        if vvod == "A" or vvod == "а":
+          voprosik+=1
+          if dict2[1] == otvetic:
+            bank+=banki
+            print("Ура! Вы выйграли ", banki, " рублей!\nТеперь у вас ", bank, "рублей\n")
+          else:
+            print ("Этот вопрос вам оказался не под силу, попробуйте следующий!\n")
 
 
 def test():
