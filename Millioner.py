@@ -1,3 +1,30 @@
+import random
+def millioner(testic):
+  bank=0
+  voprosik=1
+  while voprosik <= 15:
+    dict1={}
+    dict2={}
+    arr=[]
+    vopr, otvetic, banki, bred1, bred2, bred3 = vopros(voprosik)
+    for i in range(4):
+      key=random.randint(1, 4)
+      arr.append(key)
+    for k in range(100):
+      for i in range(4):
+        for j in range(i+1, 4):
+          if arr[i] == arr[j]:
+            arr[i] = random.randint(1, 4)
+    dict1[arr[0]] = otvetic
+    dict1[arr[1]] = bred1
+    dict1[arr[2]] = bred2
+    dict1[arr[3]] = bred3
+    dict2[1]=dict1[1]
+    dict2[2]=dict1[2]
+    dict2[3]=dict1[3]
+    dict2[4]=dict1[4]
+
+
 def test():
   i=1
   while i<=3:
