@@ -38,6 +38,13 @@ def millioner(testic):
             print("Ура! Вы выйграли ", banki, " рублей!\nТеперь у вас ", bank, "рублей\n")
           else:
             print ("Этот вопрос вам оказался не под силу, попробуйте следующий!\n")
+        elif vvod == "Б" or vvod == "б":
+          voprosik+=1
+          if dict2[2] == otvetic:
+            bank+=banki
+            print("Ура! Вы выйграли ", banki, " рублей!\nТеперь у вас ", bank, "рублей\n")
+          else:
+            print ("Этот вопрос вам оказался не под силу, попробуйте следующий!\n")
 
 
 def test():
