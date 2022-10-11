@@ -20,3 +20,26 @@ def test():
       if a==5750000:
         print("test 3 выполнен")
     i+=1
+
+def main():
+  print("Привет! Это игра кто хочет стать миллионером!")
+  a=0
+  voprosik=1
+  while a!=1:
+    testy=input("Желаете начать тест?\n1 - Начать тест\n2 - Играть!\n")
+    if testy=="1":
+      a=1
+      test()
+    elif testy=="2":
+      a=1
+      name = input("Как тебя зовут? Ответ - ")
+      print("Погнали " + name + "!\n")
+      while voprosik <= 15:
+        print("Вопрос " ,voprosik, "!\n")
+        voprosik, otvetic, bank, bred1, bred2, bred3 = vopros(voprosik)
+        voprosik+=1
+    else:
+      print("Что-то не понятное\n")
+
+
+main()
